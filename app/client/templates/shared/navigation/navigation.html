@@ -14,12 +14,26 @@
         </a>
       </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li class="{{active '/home'}}">
             {{#linkTo route='home'}}
               Home
+            {{/linkTo}}
+          </li>
+          <li class="{{active '/chat'}}">
+            {{#linkTo route='chat'}}
+              Chat
+            {{/linkTo}}
+          </li>
+          <li class="{{active '/track'}}">
+            {{#linkTo route='track'}}
+              Track
+            {{/linkTo}}
+          </li>
+          <li class="{{active '/help'}}">
+            {{#linkTo route='help'}}
+              Help
             {{/linkTo}}
           </li>
           {{> loginButtons}}
