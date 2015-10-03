@@ -31,14 +31,10 @@ okgrow:promise
 reywood:bootstrap3-sass
 fortawesome:fontawesome
 
-orionjs:core
-orionjs:bootstrap
-orionjs:summernote
-orionjs:pages
-
 momentjs:moment
 
 reactive-dict
 reactive-var
 mizzao:user-status
 ian:accounts-ui-bootstrap-3
+accounts-password

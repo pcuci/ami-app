@@ -2,10 +2,4 @@
 /* Server Only Methods */
 /*****************************************************************************/
 Meteor.methods({
-  /*
-   * Example:
-   *
-   * '/app/items/insert': function (item) {
-   * }
-   */
 });
