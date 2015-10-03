@@ -1,0 +1,60 @@
+@mixin transition-all() {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@mixin background-cover() {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@mixin sans-serif-font() {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@mixin serif-font() {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@mixin heading-font() {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: $themePrimary;
+}
+
+@mixin user-select($user-select) {
+  -webkit-touch-callout: $user-select;
+  -webkit-user-select: $user-select;
+  -khtml-user-select: $user-select;
+  -moz-user-select: $user-select;
+  -ms-user-select: $user-select;
+  user-select: $user-select;
+}
+
+@mixin bottom-right-radius($bottom-right-radius) {
+  -webkit-border-bottom-right-radius: $bottom-right-radius;
+  -moz-border-radius-bottomright: $bottom-right-radius;
+  border-bottom-right-radius: $bottom-right-radius;
+}
+
+@mixin bottom-left-radius($bottom-left-radius) {
+  -webkit-border-bottom-left-radius: $bottom-left-radius;
+  -moz-border-radius-bottomleft: $bottom-left-radius;
+  border-bottom-left-radius: $bottom-left-radius;
+}
+
+@mixin top-right-radius($top-right-radius) {
+  -webkit-border-top-right-radius: $top-right-radius;
+  -moz-border-radius-topright: $top-right-radius;
+  border-top-right-radius: $top-right-radius;
+}
+
+@mixin top-left-radius($top-left-radius) {
+  -webkit-border-top-left-radius: $top-left-radius;
+  -moz-border-radius-topleft: $top-left-radius;
+  border-top-left-radius: $top-left-radius;
+}

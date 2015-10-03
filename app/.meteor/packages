@@ -28,13 +28,11 @@ reywood:publish-composite
 tmeasday:publish-counts
 okgrow:promise
 
-poetic:materialize-scss
-gildaspk:autoform-materialize
-pfafman:materialize-modal
+reywood:bootstrap3-sass
 fortawesome:fontawesome
 
 orionjs:core
-orionjs:materialize
+orionjs:bootstrap
 orionjs:summernote
 orionjs:pages
 
@@ -43,3 +41,4 @@ momentjs:moment
 reactive-dict
 reactive-var
 mizzao:user-status
+ian:accounts-ui-bootstrap-3
