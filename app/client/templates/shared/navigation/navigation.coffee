@@ -45,9 +45,5 @@ Template.Navigation.helpers {
 Template.Navigation.created = ->
 
 Template.Navigation.rendered = ->
-  $(".button-collapse").sideNav
-    menuWidth: 300
-    edge: "left"
-    closeOnClick: true
 
 Template.Navigation.destroyed = ->

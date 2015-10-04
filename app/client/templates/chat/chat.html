@@ -1,3 +1,86 @@
 <template name="Chat">
   <h1>Find me in app/client/templates/chat/chat</h1>
+  <section>
+    <div id="content" class='container'>
+        <h1 class='page-header'>
+            Nuance Websockets Sample
+            <div class='pull-right'>
+                <div id='status-indicator'>&nbsp;</div>
+            </div>
+        </h1>
+
+        <div class='row' style='min-height:400px;'>
+            <div class='col-md-12'>
+                <div class='panel panel-default'>
+                    <div class='panel-heading'>
+                        <strong>Credentials</strong>
+                    </div>
+                    <div class='panel-body'>
+                        <form class='form' role='form' onsubmit="return false;">
+                            <div class='form-group'>
+                                <input id="url" type="text" class="form-control" placeholder="URL"/>
+                            </div>
+                            <div class='form-group'>
+                                <input id="app_key" type="text" class="form-control" placeholder="AppKey"/>
+                            </div>
+                            <div class='form-group'>
+                                <input id="app_id" type="text" class="form-control" placeholder="AppId"/>
+                            </div>
+                            <div class='form-group'>
+                                <input id="user_id" type="text" class="form-control" placeholder="UserId"/>
+                            </div>
+                            <div class='form-group'>
+                                <button id='connect' type='button' class='btn btn-primary btn-block'><i class='fa fa-check'></i> CONNECT</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tts" class='col-md-6'>
+                <div class='panel panel-default'>
+                    <div class='panel-heading'>
+                        <strong>Text to Speech</strong>
+                    </div>
+                    <div class='panel-body'>
+                        <form class='form' role='form' onsubmit="return false;">
+                            <div class='form-group'>
+                                <textarea id="tts_text" type='text' class='form-control textarea' placeholder='What text would you like to have synthesized?' rows='12'></textarea>
+                            </div>
+                            <div class='form-group'>
+                                <button id='tts_go' type='button' class='btn btn-primary btn-block'><i class='fa fa-comment'></i> SPEAK</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class='panel-body max-600' id='tts_debug_output'>
+                    </div>
+                </div>
+            </div>
+            <div id="asr" class='col-md-6'>
+                <div class='panel panel-default'>
+                    <div class='panel-heading'>
+                        <strong>Speech Recognition</strong>
+                    </div>
+                    <div class='panel-body'>
+                        <div class='form-group'>
+                            <input id="nlu_tag" type="text" class="form-control" placeholder="Service Tag (Only required if performing NLU)"/>
+                        </div>
+                        <canvas id="asr_viz" height="220" ></canvas>
+                        <br/>
+                        <button id='asr_go' type='button' class='btn btn-primary btn-block'>
+                          <i class='fa fa-microphone'></i>
+                          <span id='asr_label'>RECORD</span>
+                        </button>
+                    </div>
+                    <div class='panel-body max-600' id='asr_debug_output'>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <footer class='col-md-12 right-aligned'>
+            &copy; Nuance Communications 2014
+        </footer>
+    </div>
+  </section>
 </template>
