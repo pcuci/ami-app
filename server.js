@@ -17,9 +17,13 @@ app.get('/chat/', function (req, res) {
   sendFile(res,'chat.html');
 });
 
+app.get('/test/', function (req, res) {
+  sendFile(res,'nuance.html');
+});
+
 app.use(bodyParser.json());
 app.use(express.static(project_folder + '/htdocs'));
-app.use(express.static(project_folder + '/htdocs/lib'));
+//app.use(express.static(project_folder + '/htdocs/lib'));
 
 app.set('json spaces', 0);
 
