@@ -96,6 +96,24 @@
   margin-top: 16px;
 }
 
+.row {
+    position: relative;
+    margin-top: 1px;
+    margin-left: 10px;
+}
+
+.numbers {
+    float:right;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.15em;
+    line-height: 1.75em;
+    margin-bottom: 15px;
+    margin-top: 105px;
+}
+
+.numbers ul {
+    list-style-type: none;
+}
 
 .slider-nav {
   text-align: center;
