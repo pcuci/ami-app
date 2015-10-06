@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'>
+    <link href="lib/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet">
+    <title>Ami App: Mental Health Assistance</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <a href="/" class="logo-icon">
+          <img src="styles/logoami128.png" style="max-height: 48px;max-width:48px;">
+        </a>
+
+        <ul class="menu">
+          <li><a href="/chat" class="level1">Talk to me</a></li>
+          <li><a href="#level2" class="level2">Check In</a></li>
+          <li><a href="#level3" class="level3">Crisis</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">More <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Log In</a></li>
+              <li><a href="#">Sign Up</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Numbers</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="slider">
+
+      <div class="slide active-slide">
+        <div class="container">
+          <div class="row">
+            <div class="slide-copy col-xs-12">
+              <img src="styles/logoami1transparent_360.png" style="margin-top: 50px">
+              <h1>Hi there, my name is Ami!</h1>
+              <p>This is a safe space meant to help you track your emotional state and take control of your mental health :)</p>
+            </div>
+          </div>
+        </div>      
+      </div>
+
+      <div class="slide one">
+        <div class="container" >
+          <div class="row">
+            <div class="slide-copy">
+              <a href="level1"></a>
+              <h1>Talk to me</h1>
+              <form>
+                <div class="row">
+                    <input name="message" type="text">
+                    <button type="submit" class="btn">send</button>
+                </div>
+              </form>
+            </div> 
+          </div>
+        </div>      
+      </div> 
+
+      <div class="slide two">
+        <div class="container">
+          <div class="row">
+            <div class="slide-copy col-xs-12">
+              <a href="level2"></a>
+              <h1>Quick Check In</h1>
+              <p>Just a few quick questions to keep me up to date about your life!</p>
+              <form>
+                <p> 1. How many times did you drink coffee today?</p>
+                <input type="radio" name="coffee" value="0" checked> 0&nbsp; &nbsp; &nbsp; 
+                <input type="radio" name="coffee" value="1-2"> 1-2&nbsp; &nbsp; &nbsp; 
+                <input type="radio" name="coffee" value="3+"> 3+
+                <br>
+                
+                <p> 2. How many times did you go outside this week?</p>
+                <input type="radio" name="out" value="0" checked> 0 &nbsp; &nbsp; &nbsp; 
+                <input type="radio" name="out" value="1-2"> 1-2 &nbsp; &nbsp; &nbsp; 
+                <input type="radio" name="out" value="3+"> 3+ &nbsp; &nbsp; &nbsp;
+                
+                <p> 3. How many times did you exercise this week?</p>
+                <input type="radio" name="workout" value="0" checked> 0 &nbsp; &nbsp; &nbsp; 
+                <input type="radio" name="workout" value="1-2"> 1-2 &nbsp; &nbsp; &nbsp; 
+                <input type="radio" name="workout" value="3+"> 3+ &nbsp; &nbsp; &nbsp;
+                <br>
+                <br>
+                <input type="submit">
+              </form>
+            </div>
+          </div>
+        </div>      
+      </div> 
+
+
+      <div class="slide three">
+        <div class="container">
+          <div class="row">
+            <div class="slide-copy col-xs-5">
+              <a href="level3"></a>
+              <h1>Crisis</h1>
+              <p>Tell me what's wrong and I'll try to get you some help</p>
+              <form>
+                <div class="row">
+                  <input name="message" type="text">
+                  <button type="submit" class="btn">send</button>
+                </div>
+              </form>
+              </div>
+              <div class="numbers col-xs-7">
+                  <ul>
+                    <li><b>Connect!</b> There are people who care about you, call them!<br>
+                        <ul><li>Anna: xxx-xxx-xxxx</li>
+                            <li>Mom: xxx-xxx-xxxx</li></ul></li>
+                    <li><b>Communicate! </b>Someone is waiting here to help!
+                        <ul><li>Suicide hotline: xxx-xxx-xxxx</li>
+                            <li>Nightline: xxx-xxx-xxxx</li></ul></li>
+                    <li><b>Contact! </b>Your psychologist is there for you!
+                        <ul><li>Dr. ABC: xxx-xxx-xxxx</li></ul></li>
+                    <li><b>Remember! </b>If your life is in danger call <b>911</b></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>      
+      </div> 
+
+    </div>
+
+    <div class="slider-nav">
+      <a href="#" class="arrow-prev"><img src="styles/arrow-prev.png"></a>
+      <ul class="slider-dots">
+        <li class="dot active-dot">&bull;</li>
+        <li class="dot d1">&bull;</li>
+        <li class="dot d2">&bull;</li>
+        <li class="dot d3">&bull;</li>
+      </ul>
+      <a href="#" class="arrow-next"><img src="styles/arrow-next.png"></a>
+    </div> 
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'>
+  <link href="/lib/bootstrap.min.css" rel="stylesheet">
+  <link href="/styles/index.css" rel="stylesheet">
+  <style>
+
+    #conversation {
+      height: 80vh;
+      max-height: 80vh;
+      margin: 20px 0;
+      overflow-y: scroll;
+      width: 100%;
+      border-radius: 2%;
+      padding: 10px;
+      border-color: #999;
+      border-width: 1px;
+      border-style: solid;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .container {
+      font-size: 16px;
+    }
+
+    .answer {
+      min-height: 50px;
+      max-height: 100px;
+      margin: auto;
+      width: 100%;
+    }
+
+    input {
+      padding: 10px;
+      height: 100%;
+      width: 90%;
+    }
+
+    .sentence {
+      min-width: 50px;
+      min-height: 50px;
+      display: inline-block;
+      padding: 15px;
+      border-radius: 10px;
+      vertical-align: middle;
+
+    }
+
+    .ami-answer {
+      border-top-left-radius: 0;
+      background-color: #2bd4c3;
+      color: white;
+    }
+
+    .my-answer {
+      border-top-right-radius: 0;
+      border: 1px solid black;
+      color: black;
+      float: right;
+    }
+
+    #send.btn {
+      background-color: #2bd4c3;
+      float: right;
+      height: 100%;
+
+      padding: 10px;
+    }
+
+  </style>
+</head>
+<body>
+<div class="header">
+  <div class="container">
+    <a href="/" class="logo-icon">
+      <img src="/styles/logoami128.png" style="max-height: 48px;max-width:48px;">
+    </a>
+
+    <ul class="menu">
+      <li><a href="#level1" class="level1">Talk to me</a></li>
+
+      <li><a href="#level2" class="level2">Check In</a></li>
+      <li><a href="#level3" class="level3">Crisis</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">More <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Log In</a></li>
+          <li><a href="#">Sign Up</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Numbers</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class='row' style='min-height:400px; display: none'>
+
+  <form class='form' role='form' onsubmit="return false;">
+    <div class='form-group'>
+      <input id="url" type="text" class="form-control" placeholder="URL"/>
+    </div>
+    <div class='form-group'>
+      <input id="app_key" type="text" class="form-control" placeholder="AppKey"/>
+    </div>
+    <div class='form-group'>
+      <input id="app_id" type="text" class="form-control" placeholder="AppId"/>
+    </div>
+    <div class='form-group'>
+      <input id="user_id" type="text" class="form-control" placeholder="UserId"/>
+    </div>
+    <div class='form-group'>
+      <button id='connect' type='button' class='btn btn-primary btn-block'><i class='fa fa-check'></i> CONNECT
+      </button>
+    </div>
+  </form>
+</div>
+<div class="container">
+  <div id="conversation">
+    <div class="sentence ami-answer">
+      Hello! What is your name?
+    </div>
+  </div>
+
+  <div class="answer">
+    <input id="answer" placeholder="Enter your answer here...">
+    <button class="btn btn-info btn-large" id="send"> Send</button>
+  </div>
+</div>
+<script src="lib/jquery.min.js"></script>
+<script src="script.js"></script>
+
+<script>
+  (function(){
+    $('#send').on('click',function() {
+      var hello = $('#answer').val();
+      console.log(hello);
+      var $div = $("<div>", {'class': "my-answer sentence"});
+      $div.text(hello);
+      $('#conversation').append($div);
+      $.ajax({url:'/intent',
+        data:button,
+      'success':function(){
+
+      }})
+    })
+  }());
+</script>
+</body>
+</html>
